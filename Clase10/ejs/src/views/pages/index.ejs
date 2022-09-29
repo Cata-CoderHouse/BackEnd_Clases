@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head')%>
+</head>
+<body>
+    <%- include('../partials/header')%>
+
+    <% if (render){ %>
+        <h3><%= nombre%></h3>
+        <ul>
+            <%usuarios.forEach(user=>{%>
+                <li><%=user.nombre%> <%=user.apellido%></li>
+            <%})%>
+        </ul>
+        
+    <% } %>
+
+
+
+    <%- include('../partials/footer')%>
+</body>
+</html>

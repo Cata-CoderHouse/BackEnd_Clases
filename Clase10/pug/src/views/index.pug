@@ -1,0 +1,20 @@
+extends layout 
+block contenido 
+        //-asi se llama el bloque : contenido
+        //-trabajando con vbles
+        //- h1(style='color:blue') #{mensaje} #{nombre} #{apellido}
+        //- //-if render
+        //- if apellido
+        //-     h2 #{mensaje} #{nombre} #{apellido}
+        //- else 
+        //-     h2 No se pudo mostrar el if
+        
+        //- each nombre in nombres 
+        //-     li= nombre
+        //- else 
+        //-     li No se encontro
+
+        each nombre in nombres.length ? nombres : ['No values']
+            li= nombre
+
+        
